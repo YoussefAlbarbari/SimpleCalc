@@ -27,8 +27,8 @@ def calculator():
     def calculate_percentage_change(old_value, new_value):
         try:
             return ((new_value - old_value) / old_value) * 100
-        except ZeroDivisionError:
-            print("Error: Division by zero.")
+        except ZeroDivisionError:  # if the number the the user enter is Zero so it will the message that we want to sent him  
+            print("Error: Division by zero.")  # In this example the message that we send to him is "Error: Division by zero."
             return None
 
     # Function to clear the result (currently not used)
@@ -41,7 +41,7 @@ def calculator():
         num1 = num1_entry.get()  # Get the first number from user input
         num2 = num2_entry.get()  # Get the second number from user input
 
-        if not num1.isdigit() or not num2.isdigit():
+        if not num1.isdigit() or not num2.isdigit():  # the isdigit() method is used to check if a string consists only of digits.
             # Check if the input numbers are valid (numeric)
             print("Error: Invalid input. Numbers must be numeric.")
             return
