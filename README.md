@@ -16,24 +16,54 @@ User-friendly design: "We understand the importance of a user-friendly interface
 Portability and accessibility: "Access our calculator anytime, anywhere, using any device with internet connectivity. Whether you're on your computer, tablet, or smartphone, our calculator is readily available, making it a versatile tool for on-the-go calculations."
 
 # Explain the code
-The add(a, b) function adds two numbers a and b and returns the result.
 
-The subtract(a, b) function subtracts the second number b from the first number a and returns the result.
+def calculator():
+  Purpose: This function serves as the entry point of the calculator program. It prompts the user for input and calls the necessary functions to perform calculations.
+  Inputs: None
+  Outputs: None
 
-The divide(a, b) function divides the first number a by the second number b and handles the division by zero error by catching the ZeroDivisionError exception. If a division by zero occurs, it prints an error message and returns None.
+def add(a, b):
+  Purpose: This function performs addition of two numbers.
+  Inputs: Two numbers a and b.
+  Outputs: The sum of a and b.
 
-The multiply(a, b) function multiplies two numbers a and b and returns the result.
+def subtract(a, b):
+  Purpose: This function performs subtraction of two numbers.
+  Inputs: Two numbers a and b.
+  Outputs: The result of subtracting b from a.
 
-The calculate_percentage(value, percentage) function calculates the percentage of a value by multiplying the value by the given percentage divided by 100.
+def divide(a, b):
+  Purpose: This function performs division of two numbers, handling the division by zero error.
+  Inputs: Two numbers a and b.
+  Outputs: The result of dividing a by b. If b is zero, it prints an error message and returns None.
 
-The calculate_percentage_change(old_value, new_value) function calculates the percentage change between two values by subtracting the old value from the new value, dividing the difference by the old value, and multiplying the result by 100. It also handles the division by zero error by catching the exception and printing an error message.
+def multiply(a, b):
+  Purpose: This function performs multiplication of two numbers.
+  Inputs: Two numbers a and b.
+  Outputs: The product of a and b.
 
-In the provided code, the clear_result() function is defined but not currently used or called within the code. It appears to be intended for clearing the result or resetting the result variable, but it is not utilized in the current implementation of the calculator.
+def calculate_percentage(value, percentage):
+  Purpose: This function calculates the percentage of a value.
+  Inputs: A numeric value and a percentage value.
+  Outputs: The calculated percentage of value.
 
-The clear_result() function simply assigns an empty string ("") to a variable named result_label. However, this variable is not referenced or used anywhere else in the code. Therefore, calling clear_result() does not have any effect on the functionality or behavior of the calculator.
+def calculate_percentage_change(old_value, new_value):
+  Purpose: This function calculates the percentage change between two values.
+  Inputs: Two numeric values old_value and new_value.
+  Outputs: The percentage change from old_value to new_value. If old_value is zero, it prints an error message and returns None.
 
-The calculate() function is the main function that performs the calculation based on the user's input. It retrieves the selected operation, the first number, and the second number from user input. It checks if the input numbers are valid (numeric) using the isdigit() method. If the numbers are valid, they are converted to float type, and the corresponding operation is performed based on the user's choice. The result is then printed.
+def clear_result():
+  Purpose: This function clears the result (currently not used in the code).
+  Inputs: None
+  Outputs: None
 
-The calculator() function starts by printing a welcome message and displaying the available operations. It prompts the user to enter the first number, the second number, and the desired operation. Finally, it calls the calculate() function to perform the calculation.
+def calculate():
+  Purpose: This function performs the calculation based on user input. It calls the appropriate functions to execute the selected operation.
+  Inputs: None (retrieves inputs from user during function execution)
+  Outputs: None (prints the calculated result or error messages)
 
-To use this calculator, you can run the code, and it will prompt you for input to perform the desired calculation.
+The code block below the calculate() function performs the following tasks:
+  Prints a welcome message and displays the available operations.
+  Prompts the user to enter the first number, second number, and the desired operation.
+  Calls the calculate() function to perform the calculation based on user input.
+  The final line outside any function calculator() calls the calculator() function to start the program execution.
