@@ -18,51 +18,61 @@ Portability and accessibility: "Access our calculator anytime, anywhere, using a
 # Explain the code
 
 def calculator():
+
   Purpose: This function serves as the entry point of the calculator program. It prompts the user for input and calls the necessary functions to perform calculations.
   Inputs: None
   Outputs: None
 
 def add(a, b):
+
   Purpose: This function performs addition of two numbers.
   Inputs: Two numbers a and b.
   Outputs: The sum of a and b.
 
 def subtract(a, b):
+
   Purpose: This function performs subtraction of two numbers.
   Inputs: Two numbers a and b.
   Outputs: The result of subtracting b from a.
 
 def divide(a, b):
+
   Purpose: This function performs division of two numbers, handling the division by zero error.
   Inputs: Two numbers a and b.
   Outputs: The result of dividing a by b. If b is zero, it prints an error message and returns None.
 
 def multiply(a, b):
+
   Purpose: This function performs multiplication of two numbers.
   Inputs: Two numbers a and b.
   Outputs: The product of a and b.
 
 def calculate_percentage(value, percentage):
+
   Purpose: This function calculates the percentage of a value.
   Inputs: A numeric value and a percentage value.
   Outputs: The calculated percentage of value.
 
 def calculate_percentage_change(old_value, new_value):
+
   Purpose: This function calculates the percentage change between two values.
   Inputs: Two numeric values old_value and new_value.
   Outputs: The percentage change from old_value to new_value. If old_value is zero, it prints an error message and returns None.
 
 def clear_result():
+
   Purpose: This function clears the result (currently not used in the code).
   Inputs: None
   Outputs: None
 
 def calculate():
+
   Purpose: This function performs the calculation based on user input. It calls the appropriate functions to execute the selected operation.
   Inputs: None (retrieves inputs from user during function execution)
   Outputs: None (prints the calculated result or error messages)
 
 The code block below the calculate() function performs the following tasks:
+
   Prints a welcome message and displays the available operations.
   Prompts the user to enter the first number, second number, and the desired operation.
   Calls the calculate() function to perform the calculation based on user input.
