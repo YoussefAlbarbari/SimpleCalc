@@ -77,3 +77,59 @@ The code block below the calculate() function performs the following tasks:
   Prompts the user to enter the first number, second number, and the desired operation.
   Calls the calculate() function to perform the calculation based on user input.
   The final line outside any function calculator() calls the calculator() function to start the program execution.
+
+ # Usage Instructions:
+
+Run the calculator program.
+
+You will be greeted with a welcome message and a list of available operations: add, subtract, divide, multiply, percentage, percentage_change.
+
+Enter the first number when prompted: [Enter the first number]
+
+Enter the second number when prompted: [Enter the second number]
+
+Choose the operation by entering the corresponding keyword (e.g., add, subtract, divide) or its abbreviation (e.g., mul for multiply).
+
+The program will calculate the result based on the provided numbers and the chosen operation.
+
+The calculated result will be displayed: Result: [calculated result].
+
+You can perform additional calculations by running the calculator program again.
+
+
+Examples:
+
+  Addition: Adding two numbers.
+	
+Enter the first number: 5
+Enter the second number: 3
+Choose the operation: add
+Result: 8
+
+
+
+  Division: Dividing two numbers.
+
+Enter the first number: 10
+Enter the second number: 2
+Choose the operation: divide
+Result: 5.0
+
+Percentage: Calculating the percentage of a value.
+
+Enter the first number: 80
+Enter the second number: 25
+Choose the operation: percentage
+Result: 20.0
+
+Invalid input: Providing non-numeric input for numbers.
+
+Enter the first number: abc
+Error: Invalid input. Numbers must be numeric.
+
+Invalid operation: Choosing an invalid operation.
+
+Enter the first number: 5
+Enter the second number: 3
+Choose the operation: power
+Error: Invalid operation.
